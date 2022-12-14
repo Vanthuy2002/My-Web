@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renponsive Web</title>
+    <!-- Bootstrap Lib -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- Font and icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="thongbaopopup()">
+    <div class="wrapper">
+      <div class="menu__fixed" id="menu">
+        <nav
+          class="navbar navbar-expand-lg bg-light shadow-lg p-3 mb-5 bg-body rounded"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand px-xl-3" href="#">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item px-xl-3">
+                  <a
+                    class="nav-link navbar-brand active"
+                    aria-current="page"
+                    href="#about"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item px-xl-3">
+                  <a class="nav-link navbar-brand" href="#work">Work</a>
+                </li>
+                <li class="nav-item px-xl-3">
+                  <a class="nav-link navbar-brand" href="#cnt">Contact</a>
+                </li>
+                <li class="nav-item px-xl-3 dropdown">
+                  <a
+                    class="nav-link navbar-brand dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    More
+                  </a>
+                  <ul class="dropdown-menu mb-2">
+                    <li><a class="dropdown-item" href="#skill">Skill</a></li>
+                    <li><a class="dropdown-item" href="#">Study</a></li>
+                    <li><a class="dropdown-item" href="#">Something</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  required
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- end menu fixed -->
+      <div class="slider">
+        <img src="./Image/mac.jpg" alt="" class="img-slider" />
+        <div class="slider-text">
+          <div class="slider-tit">Start something that matters</div>
+          <div class="slider-pos">
+            Stop wasting valuable time with projects that just isn't you.
+          </div>
+          <!-- <button class="slider-btn">Learn more and start today</button> -->
+        </div>
+      </div>
+
+      <div class="about" id="about">
+        <div class="ab-head">
+          <div class="ab-tit">ABOUT THE COMPANY</div>
+          <div class="ab-pos">Key features of our company</div>
+        </div>
+
+        <div class="ab-down">
+          <div class="row">
+            <div class="col col-sm-6 col-xl-3 col-12">
+              <div class="ab-item">
+                <div class="ab-item-icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="ab-item-tit">Reponsive</div>
+                <div class="ab-item-pos">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore.
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-xl-3 col-12">
+              <div class="ab-item">
+                <div class="ab-item-icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="ab-item-tit">Reponsive</div>
+                <div class="ab-item-pos">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore.
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-xl-3 col-12">
+              <div class="ab-item">
+                <div class="ab-item-icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="ab-item-tit">Reponsive</div>
+                <div class="ab-item-pos">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore.
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-xl-3 col-12">
+              <div class="ab-item">
+                <div class="ab-item-icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="ab-item-tit">Reponsive</div>
+                <div class="ab-item-pos">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end about-->
+
+      <div class="product">
+        <div class="product-item">
+          <div class="row">
+            <div class="col">
+              <div class="pd-head-tit">WE KNOW DESIGN</div>
+              <div class="pd-pos">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </div>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="fa-solid fa-house"></i>
+                VIEW OUR WORK
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        OUR WORK
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore.
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end modal -->
+            </div>
+
+            <div class="col col-xl-6 col-12">
+              <img
+                src="./Image/phone_buildings.jpg"
+                alt=""
+                class="pd-img img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end product -->
+
+      <div class="team" id="team">
+        <div class="team-head">
+          <div class="team-title">THE TEAM</div>
+          <div class="team-pos">The ones who run this company</div>
+        </div>
+
+        <div class="team-footer">
+          <div class="row">
+            <div class="col col-sm-6 col-xl-3 col-12">
+              <div class="team-member shadow-sm p-3 mb-5 bg-body rounded">
+                <img
+                  src="./Image/admin1.jpg"
+                  alt=""
+                  class="team-img img-fluid"
+                />
+                <div class="team-name">Thuy Nguyen</div>
+                <div class="team-posi">CEO & Founder</div>
+                <div class="team-desc">
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+                  sodales pellentesque elementum.
+                </div>
+                <button class="team-btn">
+                  <i class="fa-solid fa-envelope"></i>Contact
+                </button>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-xl-3 col-12">
+              <div class="team-member shadow-sm p-3 mb-5 bg-body rounded">
+                <img
+                  src="./Image/admin1.jpg"
+                  alt=""
+                  class="team-img img-fluid"
+                />
+                <div class="team-name">Thuy Nguyen</div>
+                <div class="team-posi">CEO & Founder</div>
+                <div class="team-desc">
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+                  sodales pellentesque elementum.
+                </div>
+                <button class="team-btn">
+                  <i class="fa-solid fa-envelope"></i>Contact
+                </button>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-xl-3 col-12">
+              <div class="team-member shadow-sm p-3 mb-5 bg-body rounded">
+                <img
+                  src="./Image/admin1.jpg"
+                  alt=""
+                  class="team-img img-fluid"
+                />
+                <div class="team-name">Thuy Nguyen</div>
+                <div class="team-posi">CEO & Founder</div>
+                <div class="team-desc">
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+                  sodales pellentesque elementum.
+                </div>
+                <button class="team-btn">
+                  <i class="fa-solid fa-envelope"></i>Contact
+                </button>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-xl-3 col-12">
+              <div class="team-member shadow-sm p-3 mb-5 bg-body rounded">
+                <img
+                  src="./Image/admin1.jpg"
+                  alt=""
+                  class="team-img img-fluid"
+                />
+                <div class="team-name">Thuy Nguyen</div>
+                <div class="team-posi">CEO & Founder</div>
+                <div class="team-desc">
+                  Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+                  sodales pellentesque elementum.
+                </div>
+                <button class="team-btn">
+                  <i class="fa-solid fa-envelope"></i>Contact
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end team -->
+
+      <div class="project-done">
+        <div class="row">
+          <div class="col col-xl-3 col-12">
+            <div class="project-inf">
+              <div class="project-num">55+</div>
+              <div class="project-text">Projects Done</div>
+            </div>
+          </div>
+
+          <div class="col col-xl-3 col-12">
+            <div class="project-inf">
+              <div class="project-num">55+</div>
+              <div class="project-text">Projects Done</div>
+            </div>
+          </div>
+
+          <div class="col col-xl-3 col-12">
+            <div class="project-inf">
+              <div class="project-num">55+</div>
+              <div class="project-text">Projects Done</div>
+            </div>
+          </div>
+
+          <div class="col col-xl-3 col-12">
+            <div class="project-inf">
+              <div class="project-num">55+</div>
+              <div class="project-text">Projects Done</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end project-done -->
+
+      <div class="work" id="work">
+        <div class="work-head">
+          <div class="work-title">OUR WORK</div>
+          <div class="work-text">What we've done for people</div>
+        </div>
+
+        <div class="work-footer">
+          <div class="work-footer-1">
+            <div class="row">
+              <div class="col col-sm-6 col-xl-3 col-12">
+                <img
+                  src="./Image/tech_typewriter.jpg"
+                  alt=""
+                  class="img-fluid work-img"
+                />
+              </div>
+
+              <div class="col col-sm-6 col-xl-3 col-12">
+                <img
+                  src="./Image/tech_typewriter.jpg"
+                  alt=""
+                  class="img-fluid work-img"
+                />
+              </div>
+
+              <div class="col col-sm-6 col-xl-3 col-12">
+                <img
+                  src="./Image/tech_typewriter.jpg"
+                  alt=""
+                  class="img-fluid work-img"
+                />
+              </div>
+
+              <div class="col col-sm-6 col-xl-3 col-12">
+                <img
+                  src="./Image/tech_typewriter.jpg"
+                  alt=""
+                  class="img-fluid work-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="work-footer-2">
+            <div class="row py-3">
+              <div class="col col-sm-6 col-xl-3 col-12">
+                <img
+                  src="./Image/tech_sound.jpg"
+                  alt=""
+                  class="img-fluid work-img"
+                />
+              </div>
+
+              <div class="col col-sm-6 col-xl-3 col-12">
+                <img
+                  src="./Image/tech_sound.jpg"
+                  alt=""
+                  class="img-fluid work-img"
+                />
+              </div>
+
+              <div class="col col-sm-6 col-xl-3 col-12">
+                <img
+                  src="./Image/tech_sound.jpg"
+                  alt=""
+                  class="img-fluid work-img"
+                />
+              </div>
+
+              <div class="col col-sm-6 col-xl-3 col-12">
+                <img
+                  src="./Image/tech_sound.jpg"
+                  alt=""
+                  class="img-fluid work-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end work -->
+
+      <div class="skill" id="skill">
+        <div class="row">
+          <div class="col col-xl-6 col-sm-6 col-12">
+            <div class="skill-left">
+              <div class="skill-title">Our Skills.</div>
+              <div class="skill-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod <br />
+                tempor incididunt ut labore et dolore.
+              </div>
+              <div class="skill-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod <br />
+                tempor incididunt ut labore et dolore.
+              </div>
+            </div>
+          </div>
+          <div class="col col-xl-6 col-sm-6 col-12">
+            <div class="skill-right">
+              <div class="skill-right-text">
+                <i class="fa-solid fa-video"></i>Photography
+              </div>
+              <div class="percent">
+                <div class="skill-percent" style="width: 90%">90%</div>
+              </div>
+
+              <div class="skill-right-text">
+                <i class="fa-solid fa-video"></i>Photography
+              </div>
+              <div class="percent">
+                <div class="skill-percent" style="width: 57%">57%</div>
+              </div>
+
+              <div class="skill-right-text">
+                <i class="fa-solid fa-video"></i>Photography
+              </div>
+              <div class="percent">
+                <div class="skill-percent" style="width: 75%">75%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end skill -->
+
+      <div class="contact" id="cnt">
+        <div class="cnt-head">
+          <div class="cnt-title">CONTACT</div>
+          <div class="cnt-text">Lets get in touch. Send us a message</div>
+        </div>
+
+        <div class="cnt-inf">
+          <div class="cnt-inf-add">
+            <i class="fa-solid fa-earth-oceania"></i>Trieu Khuc, Thanh Xuan
+          </div>
+          <div class="cnt-inf-phone">
+            <i class="fa-solid fa-phone"></i>Phone : +84 964037413
+          </div>
+          <div class="cnt-inf-mail">
+            <i class="fa-solid fa-envelope-circle-check"></i>Email :
+            mail@gmail.com
+          </div>
+        </div>
+
+        <div class="cnt-form">
+          <form action="infor">
+            <input
+              type="text"
+              name="Name"
+              id="infor"
+              class="cnt-input"
+              placeholder="Name"
+              required
+            /><br />
+            <input
+              type="email"
+              name="mail"
+              id="infor"
+              class="cnt-input"
+              placeholder="Email"
+              required
+            /><br />
+            <input
+              type="text"
+              name="Subject"
+              id="infor"
+              class="cnt-input"
+              placeholder="Subject"
+              required
+            /><br />
+            <input
+              type="text"
+              name="Message"
+              id="infor"
+              class="cnt-input"
+              placeholder="Message"
+              required
+            /><br />
+            <button class="cnt-btn">
+              <i class="fa-solid fa-paper-plane"></i>Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- end contact -->
+
+      <!-- slideshow với js -->
+      <div class="slideshow">
+        <img
+          id="img"
+          src="./Image/my country.jpg"
+          alt=""
+          class="img-fluid img-slideshow"
+        />
+      </div>
+
+      <div class="footer">
+        <div class="footer-inf">
+          <button class="footer-btn">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i>To the Top</a>
+          </button>
+          <div class="footer-icon">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-discord"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </div>
+          <div class="footer-in4">
+            Powered by <a href="#abc">Thuy Nguyen</a>
+          </div>
+        </div>
+      </div>
+      <!-- end footer -->
+    </div>
+
+    <!-- Thong bao popup -->
+    <div class="tbpopup" id="tbpopup-1">
+      <div class="tboverlay"></div>
+      <div class="tbcontent">
+        <div class="gif">
+          <img src="./Image/xinchao.gif" alt="" class="img-gif" />
+        </div>
+        <div class="tbclose-btn" onclick="thongbaopopup()">&times;</div>
+        <div style="font-size: 30px; font-weight: bold">Xin chào</div>
+        <p>
+          Cảm ơn bạn đã ghé thăm trang web của mình, chúc bạn một ngày mới vui
+          vẽ và tràn đầy hạnh phúc!
+        </p>
+      </div>
+    </div>
+
+    <!--Bootstrap Js-->
+    <!-- my Js -->
+    <script src="./Javascript/main.js"></script>
+  </body>
+</html>
