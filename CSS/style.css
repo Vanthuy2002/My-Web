@@ -48,16 +48,6 @@
   color: #fff;
   margin: 16px 0;
 }
-.slider-text .slider-btn {
-  border: none;
-  font-size: 18px;
-  padding: 8px 18px;
-  margin: 16px 0;
-  cursor: pointer;
-}
-.slider .slider-btn:hover {
-  background-color: rgb(211, 204, 204);
-}
 
 /*about  */
 .wrapper .about {
@@ -279,6 +269,7 @@
 .skill .skill-percent {
   background-color: #616161;
   border-radius: 5px;
+  color : #fff;
 }
 .skill .fa-solid {
   margin-right: 10px;
